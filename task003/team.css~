@@ -1,0 +1,58 @@
+#wrapper{
+  border:1px solid #999;
+  padding:20px;
+  overflow:auto;
+  height:auto;
+  position:relative;
+  min-height:310px;
+  min-width:800px;
+  background-color:#eee;
+  
+}
+#teamname{
+  position:absolute;
+  width:200px;
+  border:1px solid #999;
+  background-color:white;
+}
+#teamname img{
+  border:1px solid #999;
+  float:left;
+  margin:25px;
+}
+p{
+  margin-top:25px;
+  color:red;
+  font-weight:bold;
+}
+#abortteam{
+  border:1px solid #999;
+  background-color:white;
+  margin-right:145px;
+  margin-left:220px;
+  padding:20px;
+  display:inline-block;
+  color:#966;
+  text-align:center;
+ 
+}
+#abortteam p{
+  text-indent:2em;
+  color:#998;
+}
+#teammenber{
+  border:1px solid #999;
+  display:inline-block;
+  position:absolute;
+  right:20px;
+  top:20px;
+  padding:10px;
+  background-color:white;
+}
+#teammenber img{
+  margin:10px;
+  width:80px;
+  border:1px solid #999;
+  display:block;
+}
+
