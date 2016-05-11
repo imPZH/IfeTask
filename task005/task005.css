@@ -1,0 +1,172 @@
+*{
+  margin:0;
+  padding:0;
+  font-family:"微软雅黑";
+}
+html{
+  width:100%;
+  overflow: auto;
+}
+body{
+  background-color:#dfdddf;
+  width: 100%;
+}
+#header{
+  background-color:#343234;
+  overflow:auto;
+  height:70px;
+  width:100%;
+}
+#header ul,#header li{
+
+  display:inline-block;
+  font-size:13px;
+  font-weight:bold;
+  color:white;
+}
+#header li{
+  margin-right:10px;
+}
+#header img{
+  float:left;
+  display:none;
+}
+#header ul{
+  float:right;
+  margin-right:20px;
+  line-height:70px;
+}
+#main{
+  position: relative;
+}
+.content{
+  background-color:white;
+  border:1px solid #858385;
+  border-bottom-width:2px;
+  border-right-width:2px;
+  margin:15px; 
+  padding:20px;
+  letter-spacing: 1px;
+ line-height: 1.5em; 
+}
+.content p{
+  text-indent:2em;
+}
+ .content h1,.content h2,.wirter,.time{
+    text-indent:0;
+    line-height:1.5em;
+   margin-top:20px;
+   margin-bottom:10px;
+  }
+h2{
+  font-size:17px;
+  color:#6E6662;
+
+}
+.wirter,.time{
+  display:inline-block;
+  color:#6E6662;
+  font-size:13px;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+.photo{
+  border:1px solid #999;
+  display: inline-block;
+  width:330px;
+  text-align: center;
+  margin:10px;
+}
+.photo p{
+  text-indent:0;
+  text-align: center;
+  margin:10px;
+}
+.photo img{
+  margin:10px;
+}
+.content ol{
+  margin:20px;
+  margin-left: 40px;
+}
+#third table{
+  border-collapse:collapse;
+  width:100%
+}
+#third table th{
+ background-color:#343234;
+ color:white;
+ font-weight: normal;
+ text-align: left;
+}
+.caozuo{
+  width:20%;
+}
+table, th, td{
+  border:1px solid #999;
+  line-height: 2em;
+  text-indent:8px;
+}
+#total{
+  background-color: #CDCBCD;
+}
+#wrapper{
+  margin-right:560px;
+}
+#biaodan{
+  position:absolute;
+  right:15px;
+  top:0;
+  width:500px;
+  margin:0;
+}
+#email,.tips,#password,#info{
+  font-size:14px;
+}
+#email{
+  margin-left:27px;
+}
+#form div{
+  margin-top:10px;
+}
+#tip2{
+  margin-left:130px;
+}
+#info{
+  margin-left:100px;
+}
+#intr{
+  margin:-27px;
+}
+#intr p{
+  display:inline-block;
+  float:left;
+}
+#intr textarea{
+  width:300px;
+  height:200px;
+  float:left;
+}
+#password p{
+  margin-bottom:10px;
+
+}
+#password #mima{
+  margin-left:30px;
+}
+input[type=password],input[type=text]{
+  padding:2px;
+  width:140px
+}
+.tips{
+  margin-left:100px;
+}
+input[type=submit]{
+  display:block;
+  margin-top:260px;
+  width:70%;
+  background-color: blue;
+  border-radius:8px;
+  color:white;
+  line-height: 2em;
+}
