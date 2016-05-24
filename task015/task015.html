@@ -1,0 +1,105 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>IFE JavaScript Task 01</title>
+  </head>
+  <body>
+
+  <ul id="source">
+    <li>北京空气质量：<b>90</b></li>
+    <li>上海空气质量：<b>70</b></li>
+    <li>天津空气质量：<b>80</b></li>
+    <li>广州空气质量：<b>50</b></li>
+    <li>深圳空气质量：<b>40</b></li>
+    <li>福州空气质量：<b>32</b></li>
+    <li>成都空气质量：<b>90</b></li>
+  </ul>
+
+  <ul id="resort">
+  </ul>
+
+  <button id="sort-btn">排序</button>
+
+  <script type="text/javascript">
+
+  function cleanTextNode(element)   //sourse的li标签中间有回车符，这些被算作是textnode            
+                                                                        //所以要删掉才能做排序
+        {   
+            for(var i=0; i<element.childNodes.length; i++)   
+            {   
+                var node = element.childNodes[i];   
+                if(node.nodeType == 3)          //  nodeType代表着该节点是文本节点
+                {   
+                    node.parentNode.removeChild(node);   
+                }   
+            }   
+        }   
+
+    /**
+     * getData方法
+     * 读取id为source的列表，获取其中城市名字及城市对应的空气质量
+     * 返回一个数组，格式见函数中示例
+     */
+    function getData() {
+        var data = [];
+        var source= document.getElementById("source");
+        cleanTextNode(source);
+        aqis = source.childNodes;                                             //aqis是已经去除掉TextNodes的数组了，只剩下li标签      ***其实用childNodes会把文本节点也包含进来，完全可以用children，这个属性不会把空白弄进来。
+         for(var i=0; i < aqis.length; i++)
+        {
+          var item=[];
+          var text = aqis[i].innerText;                        //innerText和innerHTML都是将字符串放入hmtl标签中的一个函数但是innerHTMl他可以解析hmtl标记
+                                                                                        // 例如 你放入一个<a>斯蒂芬</a>  如果在DIV中它里面就会出现一个带下划线的a元素
+                                                                                        // 但是innerText只支持普通字符串 
+              console.log(text);  // ==>  北京空气质量：90    b标签里面的文本也被提取出来了，但标签不见了                                                                         
+          item.push(text.slice(0,2));                    
+          item.push(parseInt(text.slice(-2)));
+          data.push(item);
+        }
+      return data;
+    }
+
+    /**
+     * sortAqiData
+     * 按空气质量对data进行从小到大的排序
+     * 返回一个排序后的数组
+     */
+    function sortAqiData(data) {
+      return data.sort(function(a,b){    //  数组的sort方法， 传入一个函数可以自定比较规则
+        if (a[1] > b[1]) return 1;                // 1表示大于   应该sort本来就是从小打到来排序的  大的往后面扔嘛
+        if (a[1] < b[1]) return -1;
+        if (a[1] == b[1])return 0;
+      })
+    }
+    /**
+     * render
+     * 将排好序的城市及空气质量指数，输出显示到id位resort的列表中
+     * 格式见ul中的注释的部分
+     */
+    function render(data) {
+      var display = document.getElementById("resort");
+      if (display.children.length != 0) return false;    // 点过了就别再添加了嘛，不然一大堆的不好看。
+      var li = data;
+      for(var i=0; i<li.length;i++){
+        var txt = document.createElement("li");
+        txt.innerHTML = "第"+["一","二","三","四","五","六","七","八","九","十"][i]+"名："+li[i][0]+"空气质量："; //先把城市给写上
+        var num = document.createElement("b");                //空气质量指数要放进加粗标签
+        num.innerHTML = li[i][1];
+        txt.appendChild(num);
+        display.appendChild(txt);
+      }
+    }
+    function btnHandle() {
+      var aqiData = getData();
+      aqiData = sortAqiData(aqiData);
+      render(aqiData);
+    }
+    function init() {
+      var button = document.getElementById("sort-btn");
+      button.onclick = btnHandle;
+    }
+    init();
+  </script>
+  </body>
+</html>

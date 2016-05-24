@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<label for="wd-input">输入深圳今天的温度：</label>
+		<input type="text" id="wd-input"/>
+		<button id="button" >确定</button>
+		<div>
+			你输入的值是：<span id="wd-display">未输入</span>
+		</div>
+		<script> 
+			var input = document.getElementById("button");
+			input.onclick=function(){
+				var text = document.getElementById("wd-input").value;
+				document.getElementById("wd-display").innerHTML = text;
+			}
+		</script>
+	</body>
+</html>

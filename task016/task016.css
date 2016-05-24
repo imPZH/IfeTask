@@ -1,0 +1,44 @@
+*{
+	padding:0;
+	margin:0;
+	font-family:"微软雅黑";
+}
+#aqi-city-input{
+	display: inline-block;
+	margin-left:32px;
+	margin-bottom:20px;
+}
+#add-btn{
+	margin-top:20px;
+	margin-left:50%;
+	width:180px;
+	left:-90px;
+	background-color: blue;
+	color:white;
+	display:block;
+	position:relative;
+	padding:5px;
+	outline:none;
+	border:0;
+
+}
+#add-btn:hover{
+	background-color:#00d;
+}
+div{
+	text-align: center;
+	position:relative;
+	margin-top:30px;
+}
+table,table tr td{
+	border:1px #666 solid;
+	border-collapse:collapse;
+}
+table{
+	margin:20px auto;
+}
+td{
+	line-height: 2em;
+	width:100px;
+	text-align: center;
+}

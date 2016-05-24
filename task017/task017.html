@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>空气质量报表</title>
+	<meta charset="UTF-8">
+	<style>
+		#aqi-chart{
+			border:1px solid;
+		}
+	</style>
+
+</head>
+<body>
+	<fieldset id="from-gra-time" style="display:inline;">
+		<legend>请选择日期粒度：</legend>
+		<label>日<input type="radio" name="gra-time"  value="day" checked="checked"></label>
+		<label>周<input type="radio" name="gra-time"  value="week"></label>
+		<label>月<input type="radio" name="gra-time"  value="month"></label>
+	</fieldset>
+	<fieldset style="display:inline;">
+		<legend>请选择查看的城市：</legend>
+		<select id="city-select">
+			<option>city</option>
+		</select>
+	</fieldset>
+	<div class= "aqi-chart-wrap">
+		<canvas id="aqi-chart" width = "1000" height="600">
+		</canvas>
+	</div>
+		<script type="text/javascript" src="task.js"></script>
+</body>
+</html>

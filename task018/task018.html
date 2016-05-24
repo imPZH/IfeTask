@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>模拟队列</title>
+	<meta charset="UTF-8">
+	<style type="text/css">
+		.box{
+			display: inline-block;
+			background-color: red;
+			color: white;
+			width:100px;
+			height:100px;
+			font-size:50px;
+			font-family: "微软雅黑";
+			text-align:center;
+			line-height: 100px;
+			margin:10px;
+		}
+		#ranks{
+			margin-top: 20px;
+		}
+	</style>
+	<script type="text/javascript" src="task018.js"></script>
+</head>
+<body>
+	<div id = "wrapper">
+		输入: <input type="text" name="input">
+		<input type="button" name="left-in" value="队头插入" onclick="push_left();">
+		<input type="button" name="right-in" value="队尾插入" onclick="push_right();">
+		<input type="button" name="left-out" value= "队头弹出" onclick="pop_left();">
+		<input type="button" name="right-out" value="队尾弹出" onclick= "pop_right();">
+		<div id= "ranks">
+			<div class = "box">1</div>
+			<div class = "box">2</div>
+			<div class = "box">3</div>
+			<div class = "box">4</div>
+		</div>
+	</div>
+
+</body>
+</html>
