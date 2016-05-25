@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>模拟队列</title>
+	<meta charset="UTF-8">
+	<style type="text/css">
+		.box{
+			display: inline-block;
+			background-color: red;
+			color: white;
+			width:100px;
+			height:100px;
+			font-size:50px;
+			font-family: "微软雅黑";
+			text-align:center;
+			line-height: 100px;
+			margin:10px;
+		}
+		#ranks{
+			margin-top: 20px;
+		}
+		.active{
+			background-color: blue;
+		}
+	</style>
+	<script type="text/javascript" src="task020.js"></script>
+</head>
+<body>
+	<div id = "wrapper">
+		输入: <br><textarea type="text" name="input" style="width:400px;height:200px;margin-left:50px;"></textarea>
+		<input type="button" name="left-in" value="队头插入" style = "position:relative; top:-200px" onclick="push_left();">
+		<input type="button" name="right-in" value="队尾插入" style = "position:relative; top:-200px"onclick="push_right();">
+		<input type="button" name="left-out" value= "队头弹出" style = "position:relative; top:-200px"onclick="pop_left();">
+		<input type="button" name="right-out" value="队尾弹出" style = "position:relative; top:-200px"onclick= "pop_right();">
+		<label style = "position:relative; top:-200px">搜索 <input type="text" id="search"></label>
+		<input type="button" id="btn-search" value= "搜索"style = "position:relative; top:-200px" >
+		<div id= "ranks">
+			<div class = "box">1</div>
+			<div class = "box">2</div>
+			<div class = "box">3</div>
+			<div class = "box">4</div>
+		</div>
+	</div>
+
+</body>
+</html>
