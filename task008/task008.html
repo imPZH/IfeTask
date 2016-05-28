@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>栅格系统</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style type="text/css">
+		html{
+			box-sizing:border-box;
+		}
+		*,*:before,*:after{
+			box-sizing:inherit;
+		}
+			.container{
+				max-width: 760px;
+				margin:15px auto;
+				padding:10px;
+				border: 1px solid;
+				box-sizing: content-box;
+			}
+		@media(max-width:767px){
+			.col-sm-1{width:8.3333%;}
+			.col-sm-2{width:16.6666%;}
+			.col-sm-3{width:25%;}
+			.col-sm-4{width:33.3333%;}
+			.col-sm-5{width:41.6666%;}
+			.col-sm-6{width:50%;}
+			.col-sm-7{width:58.3333%;}
+			.col-sm-8{width:66.6666%;}
+			.col-sm-9{width:75%;}
+			.col-sm-10{width:83.3333%;}
+			.col-sm-11{width:91.6666%;}
+			.col-sm-12{width:100%;}
+			.col-sm-offset-1{margin-left:8.3333%;}
+			.col-sm-offset-2{margin-left:16.6666%;}
+			}
+		@media (min-width:768px){
+			.col-md-1{width:8.3333%;}
+			.col-md-2{width:16.6666%;}
+			.col-md-3{width:25%;}
+			.col-md-4{width:33.3333%;}
+			.col-md-5{width:41.6666%;}
+			.col-md-6{width:50%;}
+			.col-md-7{width:58.3333%;}
+			.col-md-8{width:66.6666%;}
+			.col-md-9{width:75%;}
+			.col-md-10{width:83.3333%;}
+			.col-md-11{width:91.6666%;}
+			.col-md-12{width:100%;}
+			.col-md-offset-1{margin-left:8.3333%;}
+			.col-md-offset-2{margin-left:16.6666%;}
+		}
+			[class*='col-md']{
+				float:left;
+			}
+			.row:after,.row:before{
+				content:"";
+				display:table;
+				clear:both;
+			}
+			.offset{margin:10px;}
+			.inner{
+				background-color:#eee;
+				border:1px #999 solid;
+				height:50px;
+				padding:10px;
+			}
+		
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4 col-sm-6">
+				<div class="inner offset"></div>
+			</div>
+			<div class="col-md-4 col-sm-6">
+				<div class="inner offset"></div>
+			</div>
+			<div class="col-md-4	col-sm-12">
+				<div class="inner offset"></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-3 col-sm-3">
+				<div class="inner offset"></div>
+			</div>
+			<div class="col-md-6 col-sm-6">
+				<div class="inner offset"></div>
+			</div>
+			<div class="col-md-3 col-sm-3">
+				<div class="inner offset"></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-1 col-sm-2">
+				<div class="inner offset"></div>
+			</div>
+			<div class="col-md-1 col-sm-2">
+				<div class="inner offset"></div>
+			</div>
+			<div class="col-md-2 col-sm-8">
+				<div class="inner offset"></div>
+			</div>
+			<div class="col-md-2 col-sm-3">
+				<div class="inner offset"></div>
+			</div>
+			<div class="col-md-6 col-sm-3">
+				<div class="inner offset"></div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
