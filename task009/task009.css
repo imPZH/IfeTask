@@ -1,0 +1,445 @@
+*{
+	margin:0;
+	padding:0;
+	font-family:"微软雅黑";
+	font-size:10px;
+}
+body{
+	overflow: auto;
+	min-height:1053px;
+}
+#header{
+	height:53px;
+	background-color: rgb(34,138,191);
+}
+#header [class="search-wrap"]{
+	display: inline;
+	float:right;
+	margin-right:150px;
+}
+#header .logo{
+	float:left;
+	margin-left: 50px;
+	margin-top:10px;
+	width:100px;
+	display: block;
+	height:40px;
+	background: 
+		url("images/logo.png")
+		 no-repeat;
+		 text-indent:-9999px;
+}
+.search-wrap input{
+	height:30px;
+	width:300px;
+	float:left;
+	border:none;
+	outline:none;
+	font-size:16px;
+}
+.search-wrap:before{
+	display:inline-block;
+	content:"";
+	float:left;
+	margin-top:6px;
+	width:20px;
+	height: 20px;
+	background: url("images/search.jpg") no-repeat;
+}
+.search-wrap{
+	padding-left:20px;
+	padding-right:20px;
+	background-color:white;
+	border-radius:15px 15px;
+	margin-top:10px;
+}
+.login-wrap{
+	position:absolute;
+	right:70px;
+	top:13px;
+}
+.login-wrap a{
+	color:white;
+	font-size:16px;
+	text-decoration:none;
+}
+.login-wrap:before{
+	display:inline-block;
+	content:"";
+	float:left;
+	margin-top:4px;
+	width:20px;
+	height: 20px;
+	background: url("images/login.png") no-repeat;
+}
+/*--------------------------------------------------------------------*/
+#bar_left{
+	width:250px;
+	height:100%;
+	min-height:1000px;
+	float:left;
+	background-color:rgb(42,46,61);
+}
+.bar_left_top{
+	height:170px;
+}
+.user_cyl{
+	width:58px;
+	height:58px;
+	border:rgb(185,186,190) 2px solid;
+	position:relative;
+	top:20px;
+	left:50px;
+	border-radius:50px;
+}
+.user a{
+	color:white;
+	text-decoration:none;
+	font-size:20px;
+	position:absolute;
+	top:90px;
+	left:130px;
+}
+.inner_cyl{
+	width:50px;
+	height:50px;
+	position:absolute;
+	left:4px;
+	top:4px;
+	border-radius:50px;
+	background-color:rgb(185,186,190);
+}
+.sc,.fs{
+	float:left;
+	box-sizing: border-box;
+	text-align: center;
+	width:50%;
+	margin-top:50px;
+	color: white;
+}
+.sc{
+	border-right:1px white solid;
+}
+.user_data span{
+	display: block;
+}
+
+/*-----------------------------------------------------------*/
+
+.bar_list{
+	color:#6C7584;
+}
+
+.bar_list li{
+	list-style: none;
+}
+li[class~="top"]{
+	padding:10px;
+	padding-left:60px;
+}
+
+li[class~="second"]{
+	padding:5px;
+	padding-left:20px;
+}
+li[class~="third"]{
+	padding:5px;
+	padding-left:35px;
+}
+.bar_list>li:hover{
+	color:white;
+	background-color:rgb(56,61,78);
+}
+.active{
+	background-color:rgb(56,61,78);
+}
+.icon-top1,.icon-top2{
+	float:left;
+	margin-top:3px;
+	background:url("images/forder1.jpg"),no-repeat;
+	width:12px;
+	height: 12px;
+	color:white;
+}
+.icon-top2{
+	background:url("images/sanjiao.jpg");
+}
+.bar_left_top:before{
+	display: table;
+	clear:both;
+}
+.icon_offset{
+	margin-right:7px;
+}
+/*--------------------------------------------------------------*/
+#mainbody{
+	margin-left:250px;
+}
+.file_dir{
+	padding-left:10px;
+	height:30px;
+	color: #666;
+}
+.file_dir span{
+	display: inline-block;
+	color: #666;
+	margin: 0 20px;
+	line-height: 30px;
+	font-size: 10px;
+}
+.databody{
+	background-color: #EFEEED;
+}
+.wrapper{
+	height: 100%;
+	min-height: 1000px;
+	width:940px;
+	padding:20px;
+	font-size:11px;
+	overflow: auto;
+/*	border: 1px red solid;*/
+	margin:0 auto;
+}
+.searchform{
+	overflow: auto;
+}
+.box{
+	padding:20px;
+	background-color:white;
+	border: 1px #DBD9DC solid; 
+}
+.inline-box{
+	display: inline-block;
+	float:left;
+	margin-left:20px;
+	margin-right:20px;
+	color:#888;
+/*	border: 1px red solid;*/
+}
+.inline-box span{
+	display: block;
+	margin-bottom:5px;
+}
+.searchform select,
+.searchform input[name="date"]{
+	font-size:10px;
+	padding:3px;
+	margin-left:10px;
+}
+.button{
+	color:white;
+	border-style: none;
+	border-radius: 3px;
+	padding:5px 20px;
+	background-color:rgb(34,138,191);
+}
+.history{
+	margin-top:8px;
+	overflow: auto;
+}
+.history ul{
+	float:left;
+}
+.history>div{
+	float:left;
+	 background-color:white;
+	 width:30px; 
+	 height:75px;
+	 display:inline-block; 
+	 position:relative;
+	 border:#DBD9DC solid 1px;
+}
+.history>div:hover{
+	background-color: rgb(34,138,191);
+}
+.history>div:hover .turn_left,
+.history>div:hover .turn_right{
+	border-color:white;
+}
+.pricecard{
+	display: inline-block;
+	box-sizing: border-box;
+	float:left;
+	width:115px;
+	height:75px;
+	padding:8px;
+	padding-top:4px;
+	font-size:10px;
+	margin-left:4px;
+	line-height: 30px;
+	background-color:white;
+	text-align: center;
+	border: 1px #DBD9DC solid; 
+	border-right:0;
+	border-bottom:0;
+}
+.pricecard span{
+	color:#888;
+	font-weight: bold;
+}
+.pricecard span b{
+	font-size:24px;
+	font-weight:normal;
+	line-height: 20px;
+	color:#D65C09;
+}
+.chose{
+	border-top:4px solid blue;
+	padding-top:0;
+	border-radius:3px;
+}
+.pricecard:hover{
+	border-top:4px solid blue;
+	padding-top:0;
+	border-radius:3px;
+	animation:myfirst 0.5s;
+}
+.turn_left,
+.turn_right{
+	width:13px;
+	height: 13px;
+	border:#888 solid 1px;
+	border-right:0;
+	border-bottom:0;
+	transform:rotate(-45deg);
+	background-color: inherit;
+	position:absolute;
+	top:30px;
+	left:12px;
+}
+.turn_right{
+	left:5px;
+	transform:rotate(135deg);
+}
+.historysearch{
+	font-size:14px;
+	display: inline-block;
+	float:left;
+	background-color: white;
+	border:1px  #DBD9DC solid;
+	width:150px;
+	height:75px;
+}
+
+@keyframes myfirst
+{
+	from {border-top:4px solid #DBD9DC;;}
+	to {border-top:4px solid blue;}
+}
+
+.count{
+	margin-top:15px;
+	overflow: auto;
+}
+.count [class*="card"]{
+	float:left;
+	position:relative;
+	width:22%;
+	height:70px;
+	color:#888;
+	margin-right:32px;
+	border:1px solid #DBD9DC;
+	background-color:white;
+	border-radius: 3px;
+	border-left:3px solid;
+}
+.count div:last-child{
+	margin-right:0;
+}
+.count [class*="card"] span{
+	display: block;
+	font-size:13px;
+	padding:15px;
+	padding-bottom: 10px;
+	color:black;
+}
+.count [class*="card"] p{
+	padding-left:15px;
+}
+.count [class*="card"] .icon{
+	width:60px;
+	height:45px;
+	background-color:blue;
+	position:absolute;
+	top:13px;
+	left:67%;
+}
+.count .card1{
+	border-left-color:#56AB95; 
+}
+.count .card1 .icon{
+	background-color:#56AB95; 
+}
+.count .card2{
+	border-left-color: #487FBE;
+}
+.count .card2 .icon{
+	background-color:#487FBE; 
+}
+.count .card3{
+	border-left-color:#BB4332; 
+}
+.count .card3 .icon{
+	background-color:#BB4332; 
+}
+.count .card4{
+	border-left-color: #DAC734;
+}
+.count .card4 .icon{
+	background-color:#DAC734; 
+}
+.displaycard{
+	float:left;
+	margin-top:10px;
+	border-radius: 10px;
+	background:white;
+	border:1px solid #DBD9DC;
+}
+.displaycard .head{
+	padding:10px;
+	padding-left:20px;
+	width:300px;
+	color:#888;
+	background-color:#F3F4F7;
+	border-radius: 10px 10px 0 0;
+	border-bottom:1px solid #DBD9DC;
+}
+.displaycard .inner{
+	padding:10px;
+}
+.displaycard .inner td{
+	padding:10px 20px;
+	border:1px solid red;
+}
+#tab{
+	position: relative;
+	padding:20px;
+	border-radius: 3px 0 3px 3px;
+	border:1px solid blue;
+	border-top:none;
+}
+#tab1{
+	top:-1px;
+	left:-1px;
+	padding:5px 20px;
+	position:absolute;
+	border-radius: 3px 3px 0 0;
+	border:1px solid blue;
+	border-bottom:none;
+}
+#tab1:before{
+	top:-1px;
+	left:76px;
+	content:"";
+	width:192px;
+	height:16px;
+	padding:5px 20px;
+	position:absolute;
+	border-right:1px solid white;
+	border-bottom:1px solid blue;
+
+}
+.displaycard .inner table{
+	margin-top:30px;
+	border-collapse: collapse;
+}

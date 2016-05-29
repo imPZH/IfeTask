@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>样式练习</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="task009.css">
+</head>
+<body style="min-width:768px">
+	<div id="header">
+		<a href="" class="logo">logo</a>
+		</span>
+		<div class="search-wrap">
+			<input type="text" name="search">
+		</div>
+		<div class="login-wrap">
+			<a href="#">Login</a>
+		</div>
+	</div>
+	<div id="bar_left">
+		<div class="bar_left_top">
+			<div class="user">
+				<div class="user_cyl"><div class="inner_cyl"></div></div>
+				<a href="#">PZH</a>
+			</div>
+			<div class="user_data">
+				<div class="sc">
+					<span>110</span>收藏
+				</div>
+				<div class="fs">
+					<span>313</span>粉丝
+				</div>
+			</div>
+		</div>
+		<ul class="bar_list">
+			<li class="active top"><i class="icon-top1 icon_offset"></i><span class="">个人报表</span>
+				<ul >
+					<li class="second"><i class="icon-top2 icon_offset"></i><i class="icon-top1 icon_offset"></i><span class="">文件夹一</span>
+						<ul>
+							<li class="third"><i class="icon-top2 icon_offset"></i>文档1</li>
+							<li class="third"><i class="icon-top2 icon_offset"></i>文档2</li>
+						</ul>
+					</li>
+					<li class="second"><i class="icon-top2 icon_offset"></i><i class="icon-top1 icon_offset"></i><span class="">文件夹二</span>
+						<ul>
+							<li class="third"><i class="icon-top2 icon_offset"></i>文档1</li>
+							<li class="third"><i class="icon-top2 icon_offset"></i>文档2</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li class="top">
+				<i class="icon-top1 icon_offset"></i><span class="">个人收藏</span>
+			</li>
+			<li class="top">
+				<i class="icon-top1 icon_offset"></i><span class="">我的分享</span>
+			</li>
+			<li class="top">
+				<i class="icon-top1 icon_offset"></i><span class="">图库</span>
+			</li>
+			<li class="top">
+				<i class="icon-top1 icon_offset"></i><span class="">成长记录</span>
+			</li>
+			<li class="top">
+				<i class="icon-top1 icon_offset"></i><span class="">账户信息</span>
+			</li>
+		</ul>
+	</div>
+	<div id="mainbody">
+		<div class="file_dir" style="min-width:400px">
+			<span>C站</span>/<span>个人报表</span>/<span>文件一</span>/<span>文档一</span>
+		</div>
+		<div class="databody">
+			<div class="wrapper">
+			<form>
+				<div class="searchform box">
+					<div class="inline-box">
+					查询项 
+					<select style="width:80px;">
+						<option>第一项</option>
+					</select>
+					</div>
+					<div class="inline-box">
+						<span>
+						买方 
+							<select style="width:130px;">
+								<option>小A</option>
+							</select>
+						</span>
+						<span>
+						卖方 
+							<select style="width:130px;">
+								<option>小B</option>
+							</select>
+						</span>
+					</div>
+					<div class="inline-box">
+						<span>
+							日期 
+							<input type="text" name="date"  style="width:120px;margin-right:10px;" value="2016-04-01" >
+							总耗时
+							<select>
+								<option>8 天</option>
+							</select>
+						</span>
+						<span>
+							人数 
+							<select  style="width:75px;margin-right:10px;" >
+								<option>10 人</option>
+							</select>
+							成交项
+							<select style="width:108px;" >
+								<option>10 项</option>
+							</select>
+						</span>			
+					</div>
+					<input class="button" type="submit" name="" value="搜索">
+					</form>
+				</div>
+				<div class="history">
+					<div>
+						<div class="turn_left"></div>
+					</div>
+					<ul style="display:inline-block;">
+						<li class="pricecard chose">
+							10:00 am <span>￥<b>1200</b></span>
+						</li>
+						<li class="pricecard">
+							11:00 am <span>￥<b>1300</b></span>
+						</li>
+						<li class="pricecard">
+							12:00 am <span>￥<b>1200</b></span>
+						</li>
+						<li class="pricecard">
+							01:00 pm <span>￥<b>1400</b></span>
+						</li>
+						<li class="pricecard">
+							02:00 pm <span>￥<b>1500</b></span>
+						</li>
+						<li class="pricecard">
+							03:00 pm <span>￥<b>1800</b></span>
+						</li>
+					</ul>
+					<div style="margin:0 5px 0 5px;">
+						<div class="turn_right" ></div>
+					</div>
+					<a class="historysearch">
+						历史查询
+					</a>
+				</div>
+				<div class="count">
+					<p><span class="year">2016</span>年<span class="month">4</span>月份统计</p>
+					<div class="card1">
+						<span>133311</span>
+							<p>成交量</p>
+						<i class="icon"></i>
+					</div>
+					<div class="card2">
+						<span>133311</span>
+							<p>成交量</p>
+						<i class="icon"></i>
+					</div>
+					<div class="card3">
+						<span>133311</span>
+							<p>成交量</p>
+						<i class="icon"></i>
+					</div>
+					<div class="card4">
+						<span>133311</span>
+							<p>成交量</p>
+						<i class="icon"></i>
+					</div>
+				</div>
+				<div class="displaycard">
+					<p class="head">第一组项目</p>
+					<div class="inner">
+						<div id="tab">
+							<div id="tab1">项目一</div>
+							<table>
+								<tr>
+									<td>11</td>
+									<td>22</td>
+									<td>11</td>
+									<td>22</td>
+								</tr>
+								<tr>
+									<td>11</td>
+									<td>22</td>
+									<td>11</td>
+									<td>22</td>
+								</tr>
+								<tr>
+									<td>11</td>
+									<td>22</td>
+									<td>11</td>
+									<td>22</td>
+								</tr>
+								<tr>
+									<td>11</td>
+									<td>22</td>
+									<td>11</td>
+									<td>22</td>
+								</tr>
+								<tr>
+									<td>11</td>
+									<td>22</td>
+									<td>11</td>
+									<td>22</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					
+				</div>
+				<div class="displaycard">
+					<p class="head">第一组项目</p>123123
+				</div>
+				<div class="displaycard">
+					<p class="head">第一组项目</p>123123
+				</div>
+				<div class="displaycard">
+					<p class="head">第一组项目</p>123123
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
