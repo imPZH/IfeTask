@@ -1,0 +1,35 @@
+*{
+	margin:0;
+	padding:0;
+	background-color:#666;
+	
+}
+.wrapper{
+	width:800px;
+	height:170px;
+	border:1px solid blue;
+	background-color:white;
+	padding:20px;
+	margin:50px auto;
+	box-sizing:border-box;
+}
+.box{
+	width:48%;
+	height:100%;
+	padding:20px;
+	display:inline-block;
+	float:left;
+	background-color: white;
+	border:1px solid blue;
+	box-sizing:border-box;
+}
+div:last-child{
+	margin-left:4%;
+}
+.button{
+	display:inline-block; 
+	float:left;
+	padding:10px;
+	margin-left:22%;
+	background-color: white;
+}
